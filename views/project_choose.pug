@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    h1= title
+
+    ul
+        //- project_list.sort(function(a, b) {let textA = a.title.toUpperCase(); let textB = b.title.toUpperCase(); return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;});
+        each project in project_list.models
+            li
+                #{project.attributes.p_id}
+                a(href='/catalog/project/'+project.attributes.p_id) #{project.attributes.p_name}
+
+
+        else
+            li There are no projects.

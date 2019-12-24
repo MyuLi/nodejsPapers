@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ab7276d-df2f-49a8-a400-50ece9503346" name="Default Changelist" comment="" />
+    <list default="true" id="8ab7276d-df2f-49a8-a400-50ece9503346" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/taskController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/identity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/project_choose.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/project_detail.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/project_form.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/projectController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/projectController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/sysmodel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/sysmodel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/catalog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/project_list.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/project_list.pug" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.cout_teachers.js">
+  <component name="RunManager" selected="Node.js.bin\www">
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -78,7 +93,8 @@
       <option name="presentableId" value="Default" />
       <updated>1576901070540</updated>
       <workItem from="1576901141597" duration="17357000" />
-      <workItem from="1577087527291" duration="5928000" />
+      <workItem from="1577087527291" duration="11828000" />
+      <workItem from="1577160439722" duration="8685000" />
     </task>
     <servers />
   </component>
@@ -90,7 +106,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

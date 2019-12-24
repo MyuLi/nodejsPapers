@@ -1,17 +1,17 @@
 const db = require('../db');
 
 
-const Sysmodel = db.bookshelf.Model.extend({
+const Teacher = db.bookshelf.Model.extend({
     tableName: 'teacher',
     project:function () {
-        return this.hasMany(Project)
+        return this.hasMany(Project,'Teacher_t_id','t_id');
     }
 });
 
 const Project = db.bookshelf.Model.extend({
     tableName: 'project',
     teacher: function() {
-        return this.belongsTo(Sysmodel)
+        return this.belongsTo(Teacher,'Teacher_t_id','t_id');
     },
     plast: function() {
         return this.hasMany(Plast);
@@ -61,7 +61,7 @@ const Task = db.bookshelf.Model.extend({
 });
 
 module.exports = {
-    Teacher: Sysmodel,
+    Teacher: Teacher,
     Student: Student,
     Project: Project,
     Pchoose: Pchoose,

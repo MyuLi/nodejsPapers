@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    h1 #{title}
+
+    form(method='POST' action='')
+        div.form-group
+            label(for='name') 项目名称:
+            input#name.form-control(type='text', placeholder='名称，不少于1个字' name='name' value=(undefined===genre ? '' : genre.name))
+            label(for='p_info') 项目说明:
+            input#p_info.form-control(type='text', placeholder='项目具体说明' name='p_info' value=(undefined===genre ? '' : genre.name))
+            label(for='max_snum') 最大可报名人数:
+            input#max_snum.form-control(type='text', placeholder='填写数字' name='max_snum' value=(undefined === genre ? '' : genre.name))
+            label(for='limit_num') 限选人数:
+            input#limit_num.form-control(type='text', placeholder='填写数字' name='limit_num' value=(undefined===genre ? '' : genre.name))
+        button.btn.btn-primary(type='submit') Submit
+
+    if errors
+        ul
+            for error in errors
+                li!= error.msg
