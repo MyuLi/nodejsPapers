@@ -7,6 +7,9 @@ var project_controller = require('../controllers/projectController');
 var pchoose_controller = require('../controllers/pchooseController');
 var teacher_controller = require('../controllers/teacherController');
 var task_controller =  require('../controllers/taskController');
+var plast_controller = require('../controllers/plastcontroller');
+
+var signature_Controller = require('../controllers/signatrueContorller');
 /// BOOK ROUTES ///
 
 // GET catalog home page.
@@ -79,7 +82,7 @@ router.post('/pchoose/:id/delete', pchoose_controller.pchoose_delete_post);
 router.get('/pchoose/:id/update', pchoose_controller.pchoose_update_get);
 
 // POST request to update pchoose.
-router.post('/pchoose/:id/update', pchoose_controller.pchoose_update_post);
+router.post('/pchoose/update', pchoose_controller.pchoose_update_post);
 
 // GET request for one pchoose.
 router.get('/pchoose/:id', pchoose_controller.pchoose_detail);
@@ -116,10 +119,10 @@ router.get('/teachers',teacher_controller.teacher_list);
 /// plast ROUTES ///
 
 // GET request for creating a teacher. NOTE This must come before route that displays teacher (uses id).
-router.get('/plast/create', teacher_controller.teacher_create_get);
+router.get('/plast/create', plast_controller.plast_list);
 
 // POST request for creating teacher.
-router.post('/plast/create', teacher_controller.teacher_create_post);
+router.post('/plast/create', plast_controller.plast_create_post);
 
 // GET request to delete teacher.
 router.get('/teacher/:id/delete', teacher_controller.teacher_delete_get);
@@ -139,4 +142,10 @@ router.get('/teacher/:id', teacher_controller.teacher_detail);
 // GET request for list of all teacher.
 router.get('/plast',teacher_controller.teacher_list);
 
+router.get('/signature',signature_Controller.signature_home);
+router.get('/signature/show_history',signature_Controller.signature_history_get);
+router.post('/signature/show_history',signature_Controller.signature_history_post);
+router.post('/signature/multiple_file_upload',signature_Controller.signature_add);
+
+router.get('/task/:id',task_controller.task_list);
 module.exports = router;

@@ -8,7 +8,6 @@ block content
         each project in project_list.models
             li
                 #{project.attributes.p_id}
-                a(href='/catalog/project/'+project.attributes.p_id) #{project.attributes.p_name}
-
+                a(href='/catalog/project/'+project.attributes.id) #{project.attributes.p_name}
         else
             li There are no projects.

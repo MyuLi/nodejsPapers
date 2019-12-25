@@ -4,16 +4,13 @@ block content
   h1= title
   p Welcome to #[em 毕业设计系统].
 
-  h1 Dynamic content
-
   if err
     p Error getting dynamic content.
   else
     p The system has the following record counts:
 
     ul
-      li #[strong Books:] !{data.project_count}
-      li #[strong Copies:] !{data.student_count}
-      li #[strong Copies available:] !{data.pchoose_count}
-      li #[strong Authors:] !{data.plast_count}
-      li #[strong Genres:] !{data.task_count}
+      li #[strong 项目个数:] !{data.project_count}
+      li #[strong 学生人数:] !{data.student_count}
+      li #[strong 老师人数:] !{data.teacher_count}
+      li #[strong 选题记录:] !{data.plast_count}

@@ -14,42 +14,43 @@ const Project = db.bookshelf.Model.extend({
         return this.belongsTo(Teacher,'Teacher_t_id','t_id');
     },
     plast: function() {
-        return this.hasMany(Plast);
+        return this.hasMany(Plast,'Project_p_id','id');
     },
     pchoose: function() {
-        return this.hasMany(Pchoose);
+        return this.hasMany(Pchoose,'Project_p_id','id');
     }
 });
 
 const Student = db.bookshelf.Model.extend({
     tableName: 'student',
     plast: function() {
-        return this.hasOne(Plast);
+        return this.hasOne(Plast,'Student_s_id','s_id');
     },
     pchoose:function () {
-        return this.hasOne(Pchoose);
+        return this.hasOne(Pchoose,'Student_s_id','s_id');
     }
 });
 const Pchoose = db.bookshelf.Model.extend({
     tableName: 'pchoose',
     project: function() {
-        return this.belongsTo(Project);
+        return this.belongsTo(Project,'Project_p_id','id');
     },
     student:function () {
-        return this.belongsTo(Student);
+        return this.belongsTo(Student,'Student_s_id','s_id');
     },
     task:function () {
-        return this.hasMany(Task)  ;
+        return this.hasMany(Task,'Pchoose_pc_id','pc_id')  ;
     }
 });
 
 const Plast = db.bookshelf.Model.extend({
     tableName: 'plast',
     project: function() {
-        return this.belongsTo(Project);
+        return this.belongsTo(Project,'Project_p_id','id');
     },
+
     student:function () {
-        return this.belongsTo(Student)
+        return this.belongsTo(Student,'Student_s_id','s_id')
     }
 });
 

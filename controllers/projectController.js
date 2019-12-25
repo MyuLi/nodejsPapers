@@ -36,8 +36,12 @@ exports.index = function(req, res) {
             Task.count().then((count) => {
                 callback(null,count);
             });
-        }
-    },function (err,results){
+        },
+        teacher_count: function (callback) {
+            Teacher.count().then((count) => {
+                callback(null,count);
+            });
+    }},function (err,results){
         res.render('index',{title:'毕业设计系统',error:err,data:results})
     });
 };
@@ -60,7 +64,7 @@ exports.project_list = function(req, res) {
 // Display detail page for a specific project.
 exports.project_detail = function(req, res) {
     console.log('in detail project');
-    new Project({'p_id': req.params.id})
+    new Project({'id': req.params.id})
         .fetch({
             withRelated:['teacher']
         })
@@ -93,25 +97,25 @@ exports.project_create_post =  [
         const errors = validator.validationResult(req);
 
         // Create a genre object with escaped and trimmed data.
-        var project = new Project({
+        new Project({
             p_name: req.body.name,
-            p_info: req.body.p_info, // 1: dog, 2: cat...
+            p_info: req.body.p_info,
             max_snum: req.body.max_snum,
             limit_num:req.body.limit_num,
-            Teacher_t_id:userinfo.Teacherinfo.s_id
-        }).save().then(function(model){
-            console.log(model);
-        }).catch(function(err) {
+            Teacher_t_id:userinfo.Teacherinfo.t_id
+        }).save().then(function(){
+            return  res.redirect('/');
+        }).catch(function(err){
             console.log(err);
         });
 
 
-        if (!errors.isEmpty()) {
-            // There are errors. Render the form again with sanitized values/error messages.
-            res.render('project_form', { title: 'Create Project', project: project, errors: errors.array()});
-            return;
-        }
-        else {
+        // if (!errors.isEmpty()) {
+        //     // There are errors. Render the form again with sanitized values/error messages.
+        //     res.render('project_form', { title: 'Create Project', project: project, errors: errors.array()});
+        //     return;
+        // }
+        // else {
             // Data from form is valid.
             // Check if Genre with same name already exists.
             // Genre.findOne({ 'name': req.body.name })
@@ -135,7 +139,6 @@ exports.project_create_post =  [
             //     });
             //TODO 成功创建项目后
         }
-    }
 ];
 
 // Display project delete form on GET.

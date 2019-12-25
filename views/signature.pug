@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    head
+        meta(charset='UTF-8')
+        title file
+        script.
+            function showImage() {
+                console.log('clicked');
+                $.get('', function (data) {
+                    console.log(data);
+                });
+            }
+    body
+        h1 签名模块
+        h3 选择已有图片
+        a(class='button btn-primary' href='/catalog/signature/show_history') 显示已有签名
+        h3 上传图片
+        form(action='/catalog/signature/multiple_file_upload', method='post', enctype='multipart/form-data')
+            input(type='file', name='image', multiple='multiple', id='', size='50')
+            br
+            br
+            input(type='submit', value='upload file')

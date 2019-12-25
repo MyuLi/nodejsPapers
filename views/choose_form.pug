@@ -1,0 +1,64 @@
+extends layout
+
+block content
+    h1= title
+
+    script.
+        $(function () {
+            $(document).ready(function () {
+                //$('.btn-select').click(addstudent);
+            });
+        });
+        function addstudent(it) {
+            let temp =$('.btn-select');
+            var content=-1;
+            for(var i =0; i < temp.length;i++){
+                console.log(temp[i]);
+                if(it.sourceIndex==temp[i].sourceIndex){
+                    content=i;
+                }
+            }
+            if (content!=-1) {
+                alert('button clicked'+content);
+                var p_id = temp[content].value;
+                var new_value = $('#newGrade').val();
+                $.post('/catalog/pchoose/update', {pc_id:pc_id,grade:new_grade}, function (result) {
+                    let length = result.len;
+                    if ($.isEmptyObject(result.logs)) { //如果没有查询到数据则返回提示
+                        alert(`
+                  No result matched the given condition!
+
+                  Please retry!`);
+                    }
+                });
+            } else {
+                alert('There is no condition!');
+            }
+        }
+    div.row
+        table.table
+            thead
+                tr
+                    th 记录序号
+                    th 课题名
+                    th 学生姓名
+                    th 学生学院
+                    th 任务列表
+                    th 分数
+                    th 更新分数
+            tbody
+                each pchoose in pchoose_list.models
+                    if pchoose.related('project').get('id')
+                        tr
+                            th(align='left') #{pchoose.get('pc_id')}
+                            th(align='right' )
+                                a(href='/catalog/project/' + pchoose.related('project').get('id')) #{pchoose.related('project').get('p_name')}
+                            th(align='right' ) #{pchoose.related('student').get('name')}
+                            th(align='right' ) #{pchoose.related('student').get('s_school')}
+                            th(align='right' )
+                                a(href='/catalog/task/' + pchoose.related('project').get('id')) 任务列表
+                            th(align='right' ) #{pchoose.get('grade')}
+                            th(align='right' )
+                                input#newGrade(name='newgrade', tabindex='2', placeholder='输入新分数', value='', size='10', autocomplete='false' required)
+                            th(align='right')
+                                button.btn.btn-primary.btn-select(type='button' onclick='addstudent(this)' value=pchoose.get('pc_id')) 更新

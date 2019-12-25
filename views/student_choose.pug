@@ -1,0 +1,57 @@
+extends layout
+
+block content
+    h1= title
+
+    script.
+        $(function () {
+            $(document).ready(function () {
+                //$('.btn-select').click(addstudent);
+            });
+        });
+        function addstudent(it) {
+            let temp =$('.btn-select');
+            var content=-1;
+            for(var i =0; i < temp.length;i++){
+                console.log(temp[i]);
+                if(it.sourceIndex==temp[i].sourceIndex){
+                    content=i;
+                }
+            }
+            if (content!=-1) {
+                alert('button clicked'+content);
+                var p_id = temp[content].value;
+                //console.log(s_id,p_id);
+                $.post('/catalog/pchoose/create', {p_id:p_id}, function (result) {
+                    let length = result.len;
+                    if ($.isEmptyObject(result.logs)) { //如果没有查询到数据则返回提示
+                        alert(`
+                  No result matched the given condition!
+
+                  Please retry!`);
+                    }
+                });
+            } else {
+                alert('There is no condition!');
+            }
+        }
+    div.row
+        table.table
+            thead
+                tr
+                    th 记录序号
+                    th 课题名
+                    th 学生姓名
+                    th 学生学院
+                    th 选择
+            tbody
+                each plast in plast_list.models
+                    if plast.related('project').get('id')
+                        tr
+                            th(align='left') #{plast.get('p_id')}
+                            th(align='right' )
+                                a(href='/catalog/project/' + plast.related('project').get('id')) #{plast.related('project').get('p_name')}
+                            th(align='right' ) #{plast.related('student').get('name')}
+                            th(align='right' ) #{plast.related('student').get('s_school')}
+                            th(align='right')
+                                button.btn.btn-primary.btn-select(type='button' onclick='addstudent(this)' value=plast.get('p_id')) 选择

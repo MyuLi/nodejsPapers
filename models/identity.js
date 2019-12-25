@@ -10,6 +10,6 @@ var studentinfo = {
     s_school:'计算机学院',
 };
 module.exports ={
-    Teacherinfo:studentinfo,
+    Teacherinfo:teacherinfo,
     STudentinfo:studentinfo
 }

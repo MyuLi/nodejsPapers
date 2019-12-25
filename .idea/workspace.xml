@@ -2,19 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ab7276d-df2f-49a8-a400-50ece9503346" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/taskController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/identity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/project_choose.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/project_detail.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/project_form.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/plastcontroller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/signatrueContorller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/alert/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/choose_form.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/image_show.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/signature.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/student_choose.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/pchooseController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/pchooseController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/projectController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/projectController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/taskController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/taskController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/identity.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/identity.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/sysmodel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/sysmodel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/catalog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/project_choose.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/project_choose.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/project_detail.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/project_detail.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/project_form.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/project_form.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/project_list.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/project_list.pug" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,16 +55,20 @@
     </option>
   </component>
   <component name="ProjectId" id="1VHDLUxHwYqNQ5Eez2w8bPaZyd2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../practice" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="ts.external.directory.path" value="D:\Program Files (x86)\WebStorm 2019.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -94,7 +108,8 @@
       <updated>1576901070540</updated>
       <workItem from="1576901141597" duration="17357000" />
       <workItem from="1577087527291" duration="11828000" />
-      <workItem from="1577160439722" duration="8685000" />
+      <workItem from="1577160439722" duration="53608000" />
+      <workItem from="1577244961828" duration="7351000" />
     </task>
     <servers />
   </component>
@@ -113,5 +128,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

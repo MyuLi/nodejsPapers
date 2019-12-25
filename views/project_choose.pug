@@ -3,13 +3,35 @@ extends layout
 block content
     h1= title
 
-    ul
-        //- project_list.sort(function(a, b) {let textA = a.title.toUpperCase(); let textB = b.title.toUpperCase(); return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;});
-        each project in project_list.models
-            li
-                #{project.attributes.p_id}
-                a(href='/catalog/project/'+project.attributes.p_id) #{project.attributes.p_name}
-
-
-        else
-            li There are no projects.
+    script.
+        $(function () {
+            $(document).ready(function () {
+                $('#btn-choose').click(addchoose);
+            });
+        });
+        function addchoose() {
+            let content = $('.btn-choose').val();
+            console.log('button clicked');
+            if (content) {
+                $.post('/catalog/plast/create', {content: content}, function (result) {
+                    alter(result);
+                });
+            } else {
+                alert('There is no condition!');
+            }
+        }
+    div.row
+        table.table
+            thead
+                tr
+                    th 序号
+                    th 课题名
+                    th 选择
+            tbody
+                 each project in project_list.models
+                     tr
+                         th(align='left') #{project.attributes.id}
+                         th(align='right' )
+                            a(href='/catalog/project/' + project.attributes.id) #{project.attributes.p_name}
+                         th(align='right')
+                             button.btn.btn-primary.btn-choose(type='button' value=project.attributes.id) 选择

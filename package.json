@@ -8,6 +8,7 @@
     "serverstart": "DEBUG=webpages:* npm run devstart"
   },
   "dependencies": {
+    "alert": "^1.0.0",
     "async": "^3.1.0",
     "body-parser": "^1.19.0",
     "bookshelf": "^1.0.1",

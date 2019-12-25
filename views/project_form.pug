@@ -2,8 +2,15 @@ extends layout
 
 block content
     h1 #{title}
-
-    form(method='POST' action='')
+    script.
+        function buttonClicked() {
+            $("#form1").ajaxForm(function (data) {
+                if (data.status == "1") {
+                    alert("提交成功！");
+                }
+            });
+        }
+    form(method='POST' id = 'form1' action='')
         div.form-group
             label(for='name') 项目名称:
             input#name.form-control(type='text', placeholder='名称，不少于1个字' name='name' value=(undefined===genre ? '' : genre.name))
