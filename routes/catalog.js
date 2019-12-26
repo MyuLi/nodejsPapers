@@ -147,5 +147,6 @@ router.get('/signature/show_history',signature_Controller.signature_history_get)
 router.post('/signature/show_history',signature_Controller.signature_history_post);
 router.post('/signature/multiple_file_upload',signature_Controller.signature_add);
 
-router.get('/task/:id',task_controller.task_list);
+router.get('/task/student',task_controller.task_list);
+
 module.exports = router;

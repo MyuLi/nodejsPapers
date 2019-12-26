@@ -5,15 +5,13 @@ var userinfo = require('../models/identity');
 // Display list of all books.
 exports.plast_list = function(req, res) {
     //TODO 已选题的学生不能再次选择
-    Plast.fetchAll({
-        withRelated:['student',
-
-            { project: function(query) { query.where('Teacher_t_id','=',userinfo.Teacherinfo.t_id); }}]
+    Project.fetchAll({
+        withRelated:['teacher']
     })
         .then(function(model) {
             // console.log('end-------');
             // console.log('id = '+model.get('id'));
-            res.render('student_choose', { title: '申请选题', plast_list: model} );
+            res.render('project_choose', { title: '选题详细信息', project_list: model} );
         });
 };
 
@@ -33,7 +31,7 @@ exports.plast_create_post = function(req, res) {
         Student_s_id: userinfo.STudentinfo.s_id,
         Project_p_id: req.body.content, // 1: dog, 2: cat...
     }).save().then(function(model){
-        console.log(model);
+        res.redirect('/');
     }).catch(function(err) {
         console.log(err);
     });

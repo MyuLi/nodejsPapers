@@ -20,20 +20,14 @@ block content
             }
             if (content!=-1) {
                 alert('button clicked'+content);
-                var p_id = temp[content].value;
-                var new_value = $('#newGrade').val();
+                var pc_id = temp[content].value;
+                var new_grade = $('#newGrade').val();
                 $.post('/catalog/pchoose/update', {pc_id:pc_id,grade:new_grade}, function (result) {
-                    let length = result.len;
-                    if ($.isEmptyObject(result.logs)) { //如果没有查询到数据则返回提示
-                        alert(`
-                  No result matched the given condition!
-
-                  Please retry!`);
-                    }
                 });
             } else {
                 alert('There is no condition!');
             }
+            location.reload();
         }
     div.row
         table.table

@@ -2,30 +2,199 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ab7276d-df2f-49a8-a400-50ece9503346" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/plastcontroller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/signatrueContorller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/alert/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/choose_form.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/image_show.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/signature.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/student_choose.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/lib/parse-path.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/lib/set-value.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/test/forms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/buffer-from/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/buffer-from/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/buffer-from/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/buffer-from/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/deps/encoding/encoding-indexes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/deps/encoding/encoding.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/lib/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/lib/types/multipart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/lib/types/urlencoded.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/isarray/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/isarray/build/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/isarray/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/isarray/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/isarray/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/duplex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/float.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/lib/_stream_duplex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/lib/_stream_passthrough.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/lib/_stream_readable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/lib/_stream_transform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/lib/_stream_writable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/passthrough.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/readable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/transform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/writable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/string_decoder/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/string_decoder/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/string_decoder/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/string_decoder/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/string_decoder/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/test/test-types-multipart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/test/test-types-urlencoded.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/test/test-utils-decoder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/test/test-utils-parse-params.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/test/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-stream/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-stream/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-stream/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-stream/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/bench/dicer-bench-multipart-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/bench/formidable-bench-multipart-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/bench/multipartser-bench-multipart-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/bench/multiparty-bench-multipart-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/bench/parted-bench-multipart-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/bench/parted-multipart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/lib/Dicer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/lib/HeaderParser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/lib/PartStream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/isarray/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/isarray/build/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/isarray/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/isarray/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/isarray/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/duplex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/float.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/lib/_stream_duplex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/lib/_stream_passthrough.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/lib/_stream_readable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/lib/_stream_transform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/lib/_stream_writable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/passthrough.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/readable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/transform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/writable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/string_decoder/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/string_decoder/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/string_decoder/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/string_decoder/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/string_decoder/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part1.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part2.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part3.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part4.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part5.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part6.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part7.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-wrongboundary/original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-wrongboundary/preamble" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-wrongboundary/preamble.error" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part1.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part2.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part3.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part4.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part5.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part6.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part7.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/part1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/part1.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/part2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/part2.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/preamble.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/part1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/part1.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/part2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/part2.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-endfinish.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-headerparser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-multipart-extra-trailer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-multipart-nolisteners.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-multipart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/lib/counter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/lib/file-appender.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/lib/make-middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/lib/multer-error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/lib/remove-uploaded-files.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/storage/disk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/storage/memory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/streamsearch/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/streamsearch/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/streamsearch/lib/sbmh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/streamsearch/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/example/tarray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/readme.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/test/server/undef_globals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/test/tarray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/immutable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/mutable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/db5acea80e1788cb5f14a190d93f6f3b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tree.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/treestru.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/pchooseController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/pchooseController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/projectController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/projectController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/plastcontroller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/plastcontroller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/signatrueContorller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/signatrueContorller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/taskController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/taskController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/identity.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/identity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/sysmodel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/sysmodel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/catalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/choose_form.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/choose_form.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/project_choose.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/project_choose.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/project_detail.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/project_detail.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/project_form.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/project_form.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/project_list.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/project_list.pug" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +278,7 @@
       <workItem from="1576901141597" duration="17357000" />
       <workItem from="1577087527291" duration="11828000" />
       <workItem from="1577160439722" duration="53608000" />
-      <workItem from="1577244961828" duration="7351000" />
+      <workItem from="1577244961828" duration="20972000" />
     </task>
     <servers />
   </component>
